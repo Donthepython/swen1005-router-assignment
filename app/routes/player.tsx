@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router';
 import { type ChangeEvent, useEffect, useRef, useState } from 'react';
 import {tracks} from "~/tracks";
@@ -22,6 +21,7 @@ export default function PlayerRoute() {
     const [volume, setVolume] = useState(0.7);
     const currentTrack = tracks[currentTrackIndex];
     const [touchStart, setTouchStart] = useState(0);//handles mobile swiping
+    const ignoreSwipeRef = useRef(false);
 
     const togglePlayPause = async () => {//Lab 7 code to handle pauses and plays
         const audio = audioRef.current;
@@ -96,10 +96,22 @@ export default function PlayerRoute() {
         }, [currentTrackIndex]);   
 
    function handleTouchStart(e: React.TouchEvent<HTMLDivElement>){//This handles the mobile swipes
-        setTouchStart(e.touches[0].clientX);
+        const target = e.target as HTMLElement;
+
+        // Any element matching this will disable swipe for this touch
+        ignoreSwipeRef.current = !!target.closest('[data-no-swipe="true"]');
+
+        if (!ignoreSwipeRef.current) {
+            setTouchStart(e.changedTouches[0].clientX);
+        }
     }
 
-    function handleTouchEnd(e: React.TouchEvent<HTMLDivElement>){//gemini generation was used as a model for how to execute this
+    function handleTouchEnd(e: React.TouchEvent<HTMLDivElement>){//gemini generation was used as a model for how to execute this in a way that doesnt interrupt the touching of other keys
+        if (ignoreSwipeRef.current) {
+            ignoreSwipeRef.current = false;
+            return;
+        }
+
         const touchEnd = e.changedTouches[0].clientX;
         if (touchEnd < touchStart - 50){
             goToPreviousTrack();
@@ -108,6 +120,7 @@ export default function PlayerRoute() {
             goToNextTrack();
         }
     }
+
     useEffect(() => {
         localStorage.setItem('player-volume', String(volume));
         localStorage.setItem('player-track-index', String(currentTrackIndex));
@@ -127,11 +140,10 @@ export default function PlayerRoute() {
 
 
     return <main>{//optimized using reusable react components
-        <div id="player-screen" className="screen">
+        <div id="player-screen" className="screen"onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <Link to={'/'} id="back-button">← Back</Link>           
             <CoverArt
-                onTouchStart={handleTouchStart}//allows the user to swipe the album to go to the next song
-                onTouchEnd={handleTouchEnd}
+                //
                 cover={currentTrack.cover}
                 title={currentTrack.title}
                 onClick={togglePlayPause}/>
@@ -154,6 +166,3 @@ export default function PlayerRoute() {
      </div>}
     </main>
     };
-
-    
-        
