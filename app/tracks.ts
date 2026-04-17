@@ -3,7 +3,7 @@ export const tracks = [//compilation of all the songs. the directory was a lot d
     id: 0,
     title: "2Gether (Enterlude)",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
+    cover: "/swen1005-router-assignment//Images/lacy.jpg",
     src: "/swen1005-router-assignment/Songs/2Gether.mp3"
   },
   {
