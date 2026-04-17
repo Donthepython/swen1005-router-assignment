@@ -1,5 +1,6 @@
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL;//recommended by AI as i was having issues with it running which It also turns out these changes were unneeded as it was actually my specific browser(brave) that was preventing it from running due to its blockers. that being said i dont really want to change all of these back so im leaving it as is
 export const tracks = [//compilation of all the songs. the directory was a lot different until github happened and this was the solution given to my by generative AI which was to utilize the folder name itself and place it into public, i orginally had it in components
+
    {
     id: 0,
     title: "2Gether (Enterlude)",

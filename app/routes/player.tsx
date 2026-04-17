@@ -127,9 +127,11 @@ export default function PlayerRoute() {
 
 
     return <main>{//optimized using reusable react components
-        <div id="player-screen" className="screen"onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+        <div id="player-screen" className="screen">
         <Link to={'/'} id="back-button">← Back</Link>           
             <CoverArt
+                onTouchStart={handleTouchStart}//allows the user to swipe the album to go to the next song
+                onTouchEnd={handleTouchEnd}
                 cover={currentTrack.cover}
                 title={currentTrack.title}
                 onClick={togglePlayPause}/>
