@@ -1,353 +1,353 @@
+const base = import.meta.env.BASE_URL;
 export const tracks = [//compilation of all the songs. the directory was a lot different until github happened and this was the solution given to my by generative AI which was to utilize the folder name itself and place it into public, i orginally had it in components
-
-  {
+   {
     id: 0,
     title: "2Gether (Enterlude)",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/2Gether.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/2Gether.mp3`,
   },
   {
     id: 1,
     title: "4real",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/4real.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/4real.mp3`,
   },
   {
     id: 2,
     title: "911 Mr. Lonely",
     artist: "Tyler, The Creator",
-    cover: "/Images/tyler.jpg",
-    src: "/Songs/911.mp3"
+    cover: `${base}Images/tyler.jpg`,
+    src: `${base}Songs/911.mp3`,
   },
   {
     id: 3,
     title: "A Next Time",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/a_next_time.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/a_next_time.mp3`,
   },
   {
     id: 4,
     title: "Amandla's Interlude",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Amandlas_Interlude.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Amandlas_Interlude.mp3`,
   },
   {
     id: 5,
     title: "Amber",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/amber.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/amber.mp3`,
   },
   {
     id: 6,
     title: "Atomic Vomit",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/atomic_vomit.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/atomic_vomit.mp3`,
   },
   {
     id: 7,
     title: "Bad Habit",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/bad_habit.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/bad_habit.mp3`,
   },
   {
     id: 8,
     title: "Bars. 16",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/bars_16.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/bars_16.mp3`,
   },
   {
     id: 9,
     title: "Basement Jack",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/basement_jack.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/basement_jack.mp3`,
   },
   {
     id: 10,
     title: "Biggest Salmon",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/biggest_salmon.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/biggest_salmon.mp3`,
   },
   {
     id: 11,
     title: "Buttons",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Buttons.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Buttons.mp3`,
   },
   {
     id: 12,
     title: "C U Girl",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/C U girl.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/C U girl.mp3`,
   },
   {
     id: 13,
     title: "Cocky Girl",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Cocky Girl.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Cocky Girl.mp3`,
   },
   {
     id: 14,
     title: "Cody Freestyle",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/cody_freestyle.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/cody_freestyle.mp3`,
   },
   {
     id: 15,
     title: "Dark Red",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Dark Red.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Dark Red.mp3`,
   },
   {
     id: 16,
     title: "Donchano",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Donchano.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Donchano.mp3`,
   },
   {
     id: 17,
     title: "GESHUOU",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/GESHUOU.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/GESHUOU.mp3`,
   },
   {
     id: 18,
     title: "Give You the World",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Give You the World.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Give You the World.mp3`,
   },
   {
     id: 19,
     title: "Guide",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Guide.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Guide.mp3`,
   },
   {
     id: 20,
     title: "Hate CD",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Hate CD.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Hate CD.mp3`,
   },
   {
     id: 21,
     title: "Helmet",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Helmet.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Helmet.mp3`,
   },
   {
     id: 22,
     title: "Hummer",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Hummer.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Hummer.mp3`,
   },
   {
     id: 23,
     title: "I Think I Should",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/I Think I Should.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/I Think I Should.mp3`,
   },
   {
     id: 24,
     title: "In Lust We Trust",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/In Lust We Trust.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/In Lust We Trust.mp3`,
   },
   {
     id: 25,
     title: "Infrunami",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Infrunami.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Infrunami.mp3`,
   },
   {
     id: 26,
     title: "Jars of It",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Jars of It.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Jars of It.mp3`,
   },
   {
     id: 27,
     title: "Lay Me Down",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Lay Me Down.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Lay Me Down.mp3`,
   },
   {
     id: 28,
     title: "Like Me",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Like Me.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Like Me.mp3`,
   },
   {
     id: 29,
     title: "Looks",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Looks.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Looks.mp3`,
   },
   {
     id: 30,
     title: "Love 2 Fast",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Love 2 Fast.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Love 2 Fast.mp3`,
   },
   {
     id: 31,
     title: "Mercury",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Mercury.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Mercury.mp3`,
   },
   {
     id: 32,
     title: "N Side",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/N Side.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/N Side.mp3`,
   },
   {
     id: 33,
     title: "Naomi",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/Naomi.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/Naomi.mp3`,
   },
   {
     id: 34,
     title: "Only If",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Only If.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Only If.mp3`,
   },
   {
     id: 35,
     title: "Out of Me Head",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Out of Me Head.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Out of Me Head.mp3`,
   },
   {
     id: 36,
     title: "Outro Freestyle 4ever",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Outro Freestyle 4ever.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Outro Freestyle 4ever.mp3`,
   },
   {
     id: 37,
     title: "Papaya Man",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/Papaya Man.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/Papaya Man.mp3`,
   },
   {
     id: 38,
     title: "Playground",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Playground.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Playground.mp3`,
   },
   {
     id: 39,
     title: "Ryd",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/ryd.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/ryd.mp3`,
   },
   {
     id: 40,
     title: "Saturday Nights",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/Saturday Nights.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/Saturday Nights.mp3`,
   },
   {
     id: 41,
     title: "Seventh Heaven",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/Seventh Heaven.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/Seventh Heaven.mp3`,
   },
   {
     id: 42,
     title: "Some",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/some.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/some.mp3`,
   },
   {
     id: 43,
     title: "Static",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/static.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/static.mp3`,
   },
   {
     id: 44,
     title: "Sunshine",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/sunshine.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/sunshine.mp3`,
   },
   {
     id: 45,
     title: "Thangs",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/thangs.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/thangs.mp3`,
   },
   {
     id: 46,
     title: "Thats No Fun",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/Thats No Fun.mp3"
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/Thats No Fun.mp3`,
   },
   {
     id: 47,
     title: "The Tide",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/the tide.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/the tide.mp3`,
   },
   {
     id: 48,
     title: "Trips",
     artist: "INOHA",
-    cover: "/Images/inoha.jpg",
-    src: "/Songs/trips.mp3"
+    cover: `${base}Images/inoha.jpg`,
+    src: `${base}Songs/trips.mp3`,
   },
   {
     id: 49,
     title: "Uuuu",
     artist: "Steve Lacy",
-    cover: "/Images/lacy.jpg",
-    src: "/Songs/uuuu.mp3"
-  }
+    cover: `${base}Images/lacy.jpg`,
+    src: `${base}Songs/uuuu.mp3`,
+  },
 ];
