@@ -104,7 +104,7 @@ export const tracks = [//compilation of all the songs. the directory was a lot d
     title: "Cody Freestyle",
     artist: "Steve Lacy",
     cover: `${base}Images/lacy.jpg`,
-    src: `${base}Songs/Cody freestyle.mp3`,
+    src: `${base}Songs/Cody Freestyle.mp3`,
   },
   {
     id: 15,
@@ -335,7 +335,7 @@ export const tracks = [//compilation of all the songs. the directory was a lot d
     title: "The Tide",
     artist: "INOHA",
     cover: `${base}Images/inoha.jpg`,
-    src: `${base}Songs/The tide.mp3`,
+    src: `${base}Songs/The Tide.mp3`,
   },
   {
     id: 48,
