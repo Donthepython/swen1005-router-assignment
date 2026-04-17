@@ -1,15 +1,265 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/* main color setup for the app, kinda meant to be beachy and appeal to ppl with my taste in music(hence donify)
+also this was massively made from research+some ai examples to see how i should go about it */
+:root{
+  --bg-color:#a2946e;
+  --subcolor:#acacacf2;
+  --primary:#383016;
+  --text:#ffffff;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+/* basic reset stuff */
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  color:var(--text);
+  background:var(--bg-color);
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* not sure if this is needed but leaving it */
+  justify-content:center;
+}
+
+
+/* main wrapper for everything */
+
+#wrapper{
+  width:100%;
+  max-width:1350px;
+  height:100vh;
+  position:relative;
+  background-color:var(--bg-color);
+}
+
+
+
+#library-screen{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* search area */
+#search-bar-container{
+
+  position:sticky;
+  top:0;
+
+  padding:16px 20px;
+
+  background:var(--bg-color);
+  border-bottom:1px solid var(--primary);
+  text-align:center;
+  z-index:10;
+  /*prevents shrinking inside flex*/
+  flex-shrink:0;
+}
+
+
+/* actual search box */
+
+#search-bar{
+
+  width:100%;
+  max-width:450px;
+  padding:12px 20px;
+  border-radius:25px;
+  font-size:16px;
+  border:2px solid var(--primary);
+  background:var(--subcolor);
+  color:var(--text);
+  outline:none;
+}
+
+
+
+
+#playlistwrapper{
+
+  flex:1;
+
+  padding:8px 20px;
+
+  overflow-y:auto;
+
+  /*smoother scrolling on phones*/
+  -webkit-overflow-scrolling:touch;
+}
+
+
+#song-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+/*individual songs*/
+
+.song-item{
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  padding:10px 14px;
+
+  min-height:52px;
+
+  border-bottom:1px solid rgba(255,255,255,0.1);
+
+  cursor:pointer;
+
+  transition:background 0.2s;
+}
+
+/*hover effect, didnt steal this but definitely not even close to an original thought*/
+
+.song-item:hover{
+  background:rgba(255,255,255,0.1);
+}
+
+
+.song-title{
+  margin:0;
+
+  font-size:15px;
+  line-height:1.2;
+}
+
+
+.song-artist{
+
+  margin:2px 0 0 0;
+
+  font-size:13px;
+  line-height:1.2;
+
+  opacity:0.75;
+}
+
+
+
+/* player screen stuff*/
+
+#player-screen{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding:40px 20px;
+  height:100vh;
+  overflow-y:auto;
+}
+
+
+/* back button */
+
+#back-button{
+
+  color:white;
+  padding:8px 20px;
+  border-radius:20px;
+  margin-bottom:30px;
+  background:none;
+  border:1px solid white;
+  cursor:pointer;
+  align-self:flex-start;
+}
+
+
+/* album art */
+
+#cover-art{
+
+  width:300px;
+  height:300px;
+  max-width:80%;
+  aspect-ratio:1/1;
+  background-size:cover;
+  background-position:center;
+  background-color:var(--subcolor);
+  border-radius:15px;
+  margin-bottom:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:80px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+
+.hidden{
+  display:none !important;
+}
+
+
+
+.controls{
+
+  width:100%;
+  max-width:400px;
+
+  margin-top:20px;
+}
+
+
+input[type="range"]{
+  accent-color:var(--primary);
+  cursor:pointer;
+}
+
+
+@media (max-width:768px){
+
+  /* tighten up search area */
+
+  #search-bar-container{
+    padding:10px 12px;
   }
+
+  #search-bar{
+    padding:10px 16px;
+    font-size:14px;
+  }
+
+  #playlistwrapper{
+    padding:4px 10px;
+  }
+
+  .song-item{
+    padding:6px 10px;
+    min-height:44px;
+  }
+
+  .song-title{
+    font-size:14px;
+  }
+
+  .song-artist{
+    font-size:12px;
+    margin-top:1px;
+  }
+
+  #player-screen{
+    padding:24px 16px;
+    touch-action: pan-y;
+  }
+
+  #cover-art{
+    width:240px;
+    height:240px;
+  }
+
+  .progress-slider {/*added to fix the progress slider's width*/
+  width: 300px;
+  max-width:none;
+
+
+}
 }

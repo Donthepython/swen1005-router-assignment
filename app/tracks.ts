@@ -1,0 +1,352 @@
+export const tracks = [//compilation of all songs
+    {
+        id:0,
+        title:"2Gether (Enterlude)",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/2Gether.mp3"
+    },
+    {
+        id:1,
+        title:"4real",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/4real.mp3"
+    },
+    {
+        id:2,
+        title:"911 Mr. Lonely",
+        artist:"Tyler, The Creator",
+        cover:"./components/Images/tyler.jpg",
+        src:"./components/Songs/911.mp3"
+    },
+    {
+        id:3,
+        title:"A Next Time",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/a_next_time.mp3"
+    },
+    {
+        id:4,
+        title:"Amandla's Interlude",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Amandlas_Interlude.mp3"
+    },
+    {
+        id:5,
+        title:"Amber",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/amber.mp3"
+    },
+    {
+        id:6,
+        title:"Atomic Vomit",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/atomic_vomit.mp3"
+    },
+    {
+        id:7,
+        title:"Bad Habit",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/bad_habit.mp3"
+    },
+    {
+        id:8,
+        title:"Bars. 16",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/bars_16.mp3"
+    },
+    {
+        id:9,
+        title:"Basement Jack",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/basement_jack.mp3"
+    },
+    {
+        id:10,
+        title:"Biggest Salmon",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/biggest_salmon.mp3"
+    },
+    {
+        id:11,
+        title:"Buttons",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Buttons.mp3"
+    },
+    {
+        id:12,
+        title:"C U Girl",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/C U girl.mp3"
+    },
+    {
+        id:13,
+        title:"Cocky Girl",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Cocky Girl.mp3"
+    },
+    {
+        id:14,
+        title:"Cody Freestyle",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/cody_freestyle.mp3"
+    },
+    {
+        id:15,
+        title:"Dark Red",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Dark Red.mp3"
+    },
+    {
+        id:16,
+        title:"Donchano",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Donchano.mp3"
+    },
+    {
+        id:17,
+        title:"GESHUOU",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/GESHUOU.mp3"
+    },
+    {
+        id:18,
+        title:"Give You the World",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Give You the World.mp3"
+    },
+    {
+        id:19,
+        title:"Guide",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Guide.mp3"
+    },
+    {
+        id:20,
+        title:"Hate CD",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Hate CD.mp3"
+    },
+    {
+        id:21,
+        title:"Helmet",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Helmet.mp3"
+    },
+    {
+        id:22,
+        title:"Hummer",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Hummer.mp3"
+    },
+    {
+        id:23,
+        title:"I Think I Should",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/I Think I Should.mp3"
+    },
+    {
+        id:24,
+        title:"In Lust We Trust",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/In Lust We Trust.mp3"
+    },
+    {
+        id:25,
+        title:"Infrunami",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Infrunami.mp3"
+    },
+    {
+        id:26,
+        title:"Jars of It",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Jars of It.mp3"
+    },
+    {
+        id:27,
+        title:"Lay Me Down",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Lay Me Down.mp3"
+    },
+    {
+        id:28,
+        title:"Like Me",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Like Me.mp3"
+    },
+    {
+        id:29,
+        title:"Looks",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Looks.mp3"
+    },
+    {
+        id:30,
+        title:"Love 2 Fast",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Love 2 Fast.mp3"
+    },
+    {
+        id:31,
+        title:"Mercury",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Mercury.mp3"
+    },
+    {
+        id:32,
+        title:"N Side",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/N Side.mp3"
+    },
+    {
+        id:33,
+        title:"Naomi",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/Naomi.mp3"
+    },
+    {
+        id:34,
+        title:"Only If",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Only If.mp3"
+    },
+    {
+        id:35,
+        title:"Out of Me Head",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Out of Me Head.mp3"
+    },
+    {
+        id:36,
+        title:"Outro Freestyle 4ever",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Outro Freestyle 4ever.mp3"
+    },
+    {
+        id:37,
+        title:"Papaya Man",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/Papaya Man.mp3"
+    },
+    {
+        id:38,
+        title:"Playground",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Playground.mp3"
+    },
+    {
+        id:39,
+        title:"Ryd",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/ryd.mp3"
+    },
+    {
+        id:40,
+        title:"Saturday Nights",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/Saturday Nights.mp3"
+    },
+    {
+        id:41,
+        title:"Seventh Heaven",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/Seventh Heaven.mp3"
+    },
+    {
+        id:42,
+        title:"Some",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/some.mp3"
+    },
+    {
+        id:43,
+        title:"Static",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/static.mp3"
+    },
+    {
+        id:44,
+        title:"Sunshine",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/sunshine.mp3"
+    },
+    {
+        id:45,
+        title:"Thangs",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/thangs.mp3"
+    },
+    {
+        id:46,
+        title:"Thats No Fun",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/Thats No Fun.mp3"
+    },
+    {
+        id:47,
+        title:"The Tide",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/the tide.mp3"
+    },
+    {
+        id:48,
+        title:"Trips",
+        artist:"INOHA",
+        cover:"./components/Images/inoha.jpg",
+        src:"./components/Songs/trips.mp3"
+    },
+    {
+        id:49,
+        title:"Uuuu",
+        artist:"Steve Lacy",
+        cover:"./components/Images/lacy.jpg",
+        src:"./components/Songs/uuuu.mp3"
+    }
+];
