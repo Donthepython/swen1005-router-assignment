@@ -114,10 +114,10 @@ export default function PlayerRoute() {
 
         const touchEnd = e.changedTouches[0].clientX;
         if (touchEnd < touchStart - 50){
-            goToPreviousTrack();
+            goToNextTrack();
         }
         if (touchEnd > touchStart + 50){
-            goToNextTrack();
+            goToPreviousTrack();
         }
     }
 
